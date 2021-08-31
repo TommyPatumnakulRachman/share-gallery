@@ -1,0 +1,953 @@
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) { /*You can decrese this number if you want only on small devices*/
+    
+    .header_text{
+        display:none;
+    }
+    
+    .more_from_this_artist_art_flex {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+
+    .footer_top_box_flex{
+        flex-direction: column;
+        row-gap: 30px;
+      }
+  }
+
+.hidden
+{
+    display: none;
+}
+
+.top_header {
+  grid-column: 1/-1;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  column-gap: 50px;
+  
+}
+
+.header_logo_left {
+  margin-right: auto;
+}
+
+.header_logo_right {
+    
+  margin-left: auto;
+  
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.rainbow_line1 {
+  grid-column: 1/-1;
+  width: 100vw;
+}
+
+
+.header_text:link,
+.header_text:visited {
+  color: #333;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.header_text:hover,
+.header_text:active {
+  color: #2174df;
+}
+
+.header_texts {
+  display: flex;
+  gap: 75px;
+  list-style: none;
+  font-family: Sofia Pro;
+  margin-top: 20px;
+  margin-right: 130px;
+}
+
+/*------------------------------#   BODY CONTAINER    #--------------------------*/
+
+
+.body_container {
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 75px;
+    grid-template-columns: 65fr 35fr;
+    font-family: Sofia Pro;
+    font-style: normal;
+  }
+
+.art_title {
+  grid-column: 1/-1;
+  padding: 25px 0;
+  font-size: 47px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.art_image_1 {
+  width: 100%;
+  justify-self: left;
+}
+
+.art_image_2 {
+    width: 100%;
+    justify-self: left;
+  }
+
+  .art_image_3 {
+    width: 100%;
+    justify-self: left;
+  }
+
+  .art_image_4 {
+    width: 100%;
+    justify-self: left;
+  }
+
+
+.four_boxes
+{
+  grid-column: 1/-1;
+  display: flex;
+ margin-top: 30px;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.box
+{
+background: #FFFFFF;
+box-sizing: border-box;
+border: 1px solid #DADEE3;
+box-sizing: border-box;
+border-radius: 3px;
+padding: 8px 10px;
+display: flex;
+cursor: pointer;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover{
+    transition: background .3s;
+    background: #ebebeb;
+}
+
+.box:active{
+    transform: translateY(1px);
+  font-weight: 600;
+}
+
+.box:focus{
+    border: 2px solid #2174df;
+    transform: translateY(1px);
+    font-weight: 600;
+  }
+
+.box_image
+{
+    width: 20px;
+    height: auto;
+    background: #ffffff;
+    margin-top: 3px;
+}
+
+.share_link_button
+{
+    
+    border: none;
+    width: 25px;
+    height: 25px;
+    margin-bottom: auto;
+    
+}
+
+.wrapper
+{
+    margin-bottom: auto;
+    display: flex;
+    margin-left: auto;
+}
+
+.share_link_icon
+{
+    
+   
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+}
+
+.share_link_icon:active{
+    opacity: .7;
+    border: 2px solid #2174df;
+    transform: translateY(1px);
+}
+
+.rainbow
+{
+    background: linear-gradient(135.57deg, #66FCF0 3.13%, #D5E9AC 21.12%, #FCC2C1 38.45%, #A595DC 56.42%, #6F90F9 76.2%, #55EDFB 97.17%);
+}
+
+
+/*------------------------------#   PURCHASE BOX    #--------------------------*/
+
+.purchase_box {
+  align-self: flex-start;
+  justify-self: flex-start;
+  
+  padding: 20px 50px;
+  background: #FBFDFF;
+
+/* Unselected secondary button */
+border: 1px solid #DADEE3;
+box-sizing: border-box;
+}
+
+.purchase_box_title {
+    font-family: "Sofia Pro", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 30px;
+   padding-top: 15px;
+    /* identical to box height */
+  font-size: 18.5px;
+    color: #1d2126;
+}
+
+.purchase_box_description_header {
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16.5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  /* identical to box height */
+  text-transform: uppercase;
+
+  color: #1d2126;
+}
+
+.purchase_box_description{
+    font-size: 18.5px;
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18.5px;
+  
+  color: #777;
+  line-height: 1.3;
+ 
+}
+
+
+
+.purchase_box_button_flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+
+  /* justify-content: center; */
+  /* font-size: 30px; */
+}
+
+/*------------------------------#   SIZE   #--------------------------*/
+
+.purchase_box_button_size {
+  background: #ffffff;
+  border: 1px solid #dadee3;
+  padding: 14px 0;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16.5px;
+  font-family: Sofia Pro;
+ 
+}
+
+.purchase_box_button_size:active,
+.purchase_box_button_size:focus {
+  border: 2px solid #2174df;
+  transform: translateY(1px);
+  font-weight: 600;
+}
+
+.purchase_box_button_size:hover{
+    background: #f3f3f3;
+    transition: background 0.3s;
+    
+}
+/*------------------------------#   FRAME    #--------------------------*/
+
+.purchase_box_button_frame {
+    background: #ffffff;
+    border: 1px solid #dadee3;
+    padding: 14px 0;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16.5px;
+    font-family: Sofia Pro;
+}
+
+.purchase_box_button_frame:active,
+.purchase_box_button_frame:focus {
+  border: 2px solid #2174df;
+  transform: translateY(1px);
+  font-weight: 600;
+}
+
+.purchase_box_button_frame:hover{
+    background: #f3f3f3;
+    transition: background 0.3s;
+    
+}
+/*------------------------------#   QTY    #--------------------------*/
+
+.purchase_box_button_qty_flex {
+  display: grid;
+  grid-template-columns: 150px 40px;
+  margin-top: 20px;
+}
+
+.purchase_box_button_qty {
+  cursor: pointer;
+  font-size: 30px;
+  border: none;
+  background-color: #fff;
+  padding: 2px 0;
+}
+
+.purchase_box_number_input {
+    background: #FFFFFF;
+    /* Unselected secondary button */
+    
+    border: 1px solid #DADEE3;
+    box-sizing: border-box;
+    border-radius: 3px 0px 0px 3px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Sofia Pro;
+  font-style: normal;
+font-weight: 800;
+font-size: 22.5px;
+line-height: 31px;
+/* identical to box height */
+
+text-align: center;
+
+color: #1D2126;
+}
+
+.qty_label {
+  grid-column: 1/-1;
+
+  font-family: Sofia Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16.5px;
+  line-height: 19px;
+  /* identical to box height */
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #1d2126;
+}
+
+.btn_box {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.button10 {
+  font-weight: bold;
+  /* Unselected secondary button */
+
+  border: 1px solid #dadee3;
+  box-sizing: border-box;
+  border-radius: 0px 3px 0px 0px;
+
+  
+}
+
+.button11 {
+  font-weight: bold;
+  /* Unselected secondary button */
+  border: 1px solid #dadee3;
+  box-sizing: border-box;
+  border-radius: 0px 0px 3px 0px;
+}
+
+
+.button11:hover,
+.button10:hover{
+        background: #f3f3f3;
+        transition: background 0.3s;   
+}
+
+.plus_image
+{
+    padding-top: 5px;
+    width:50%;
+}
+
+.minus_image
+{
+    width:50%;
+    padding-bottom: 7px;
+}
+
+.button10:active,
+.button11:active {
+  border: 2px solid #2174df;
+  transform: translateY(1px);
+}
+
+/*------------------------------#   ADD TO CART   #--------------------------*/
+
+
+.add_to_cart_flex
+{
+    margin-top: 30px;
+    display:flex;
+}
+
+.add_to_cart_price
+{
+display:flex;
+justify-content: left;
+align-items: center;
+flex:1;
+background: #FBFDFF;
+/* Unselected secondary button */
+font-family: Sofia Pro;
+font-style: normal;
+border: 1px solid #DADEE3;
+box-sizing: border-box;
+border-radius: 3px;
+padding-left: 20px;
+
+
+font-weight: 600;
+font-size: 32px;
+line-height: 50px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.add_to_cart
+{
+flex:1;
+background: #FBFDFF;
+/* Unselected secondary button */
+
+border: 1px solid #DADEE3;
+box-sizing: border-box;
+border-radius: 3px;
+
+
+
+}
+
+.add_to_cart_button
+{
+   
+background: #2174DF;
+border-radius: 0px 3px 3px 0px;
+font-family: Sofia Pro;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+border-color: #2174DF;
+text-align: center;
+
+color: #FFFFFF;
+padding: 20px 15px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.add_to_cart_button:active{
+transform: translateY(2px);
+}
+
+.add_to_cart_button:hover{
+    background: #13498f;
+    
+}
+
+.free_shipping
+{
+
+    margin-top: 30px;
+
+font-family: Sofia Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #4E545A;
+
+}
+
+
+/*------------------------------#   ABOUT DESCRIPTIONS    #--------------------------*/
+
+
+.about_container
+{
+
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 75px;
+    grid-template-columns: 65fr 35fr;
+    font-family: Sofia Pro;
+    font-style: normal;
+}
+
+.artist_tabs
+{
+    grid-column: 1/-1;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    column-gap: 30px;
+    
+
+font-weight: 600;
+font-size: 16px;
+line-height: 40px;
+/* identical to box height, or 250% */
+
+text-align: center;
+
+color: #1D2126;
+}
+
+
+
+
+
+
+
+
+.tab:hover {
+  color: rgb(105, 105, 105);
+  margin: 0px;
+}
+
+.tab::before {
+  content: '';
+  display: block;
+  padding-top: .5px;
+  height: 4.5px;
+  background-color:rgb(0, 0, 0);
+  top: 40px;
+  width: 0%;
+  transition: all  ease-in-out .1s;
+  position: relative;
+}
+
+.divider
+{
+    grid-column: 1/-1;
+    content: '';
+  display: block;
+  
+  background-color: #DADEE3;
+  border: .5px solid #DADEE3;
+  width: 100%;
+  transition: all  ease-in-out .1s;
+  position: relative;
+}
+
+.tab:focus::before {
+  width: 100%;
+  margin: 0;
+}
+
+.tab{
+
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin: 0px;
+    text-align: center;
+
+    font-family: Sofia Pro;
+    font-style: normal;
+
+font-weight: 600;
+font-size: 16px;
+line-height: 40px;
+/* identical to box height, or 250% */
+
+text-align: center;
+
+color: #1D2126;
+
+
+  }
+
+
+.tab:hover{
+   
+   
+    transition: all .1s ease-in-out 0.1s;
+  }
+
+
+  
+  .art_tab_description_flex
+  {
+    margin-top: 35px;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+
+  .art_tab_description_subheader
+  {
+    margin-top: 10px;
+    line-height: 22px;
+    color: #4E545A;   
+  }
+
+  .art_tab_description_header{
+   
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .art_tab_description
+  {
+    margin-top: 15px;
+    line-height: 25px;
+    color: #4E545A;  
+  }
+
+  .more_from_this_artist_container
+  {
+    width: 90vw;
+    margin: 0 auto;
+    
+    column-gap: 75px;
+    grid-template-columns: 65fr 35fr;
+    font-family: Sofia Pro;
+    font-style: normal;
+  }
+
+
+  .more_from_this_artist_header
+  {
+      margin-top: 30px;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 40px;
+      color: #1D2126;
+  }
+
+
+  .more_from_this_artist_art_flex
+  {
+    grid-column: 1/-1;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .more_from_this_artist_box
+  {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #DADEE3;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 15px 16px;
+    padding-bottom: 15px;
+    display: grid;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .more_from_this_artist_box:hover{
+    opacity: .8;
+    border: 2px solid #2174df;
+ 
+    background-color: red no-repeat fixed;
+    height: 100%;
+    overflow: hidden;
+    color: red
+  
+}
+
+.more_from_this_artist_box:active{
+    
+    border: 2px solid #2174df;
+    transform: translateY(3px);
+}
+
+.more_from_this_artist_box_image
+{
+    width: 280px ; 
+    height: 259px;
+}
+
+  .image_info_line1
+  {
+    
+    grid-column: 1/-1;
+    display: flex;
+    margin-top: 13px;
+    align-items: center;
+    justify-content: space-between;
+/* identical to box height */
+font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+
+    color: #8B939B;
+    text-decoration: none;
+
+  }
+
+  .no_deco{
+    text-decoration: none;
+  }
+  
+  .image_info_line2
+  {
+    
+    grid-column: 1/-1;
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: space-between;
+/* identical to box height */
+font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+
+    color: #000000;
+
+  }
+
+  .rainbow_line2 {
+    grid-column: 1/-1;
+    width: 100vw;
+    margin-top: 150px;
+  }
+
+  .bottom_footer
+  {
+      display:grid;
+      font-family: Sofia Pro;
+    font-style: normal;
+
+  }
+
+  .footer_top_box_flex
+  {
+      grid: 1/-1;
+      display: flex;
+      background-color: #f4f7fb;
+      padding: 100px 350px;
+      border-bottom: 1px solid #dadee3;
+      align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 25px;
+    font-family: Sofia Pro;
+    
+        
+  }
+
+  .footer_header
+  {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 40px;
+
+  }
+
+.footer_description
+{
+    font-size: 17px;
+    margin-top: 10px;
+    color: #8B939B;
+    padding: 0 20px;
+}
+
+
+.enter_email_flex
+{
+margin-top: 10px;
+padding: 0 50px;
+
+    
+    display: flex;
+    column-gap: px;
+    
+}
+
+.enter_email_box
+{
+
+    font-family: Sofia Pro;
+    font-style: normal;
+    color:black;
+    font-size: 16px;
+
+   text-align: left;
+background: #FBFDFF;
+/* Unselected secondary button */
+font-family: Sofia Pro;
+font-style: normal;
+border: 1px solid #DADEE3;
+padding-right: 70px;
+padding-left: 10px;
+border-radius: 3px;
+}
+
+.enter_email_button
+{
+    word-wrap: break-word;
+    background: #2174DF;
+    border-radius: 22.5px;
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    /* identical to box height */
+    border-color: #2174DF;
+    width: 90px;
+   
+    color: #FFFFFF;
+    padding: 10px 0px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    margin-left: 20px;
+    }
+    
+    .enter_email_button:active{
+    transform: translateY(2px);
+    }
+    
+    .enter_email_button:hover{
+        background: #13498f;
+        
+    }
+
+
+    .footer_bottom_box_container
+    {
+        grid: 1/-1;
+        
+        display: flex;
+        padding: 50px 150px;
+        text-align: left;
+        line-height: 25px;
+        justify-content: space-between;
+
+    }
+
+    .footer_bottom_box
+    {
+        padding-right: 250px;
+    }
+
+    .cta1
+    {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 10px;
+        
+    }
+
+    .cta2
+    {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+
+    .no_bullet_points
+    {
+     list-style: none;
+     font-family: Sofia Pro;
+     text-decoration: none;
+     color: #8B939B;
+        
+    }
+
+    
+
+    .no_bullet_points:hover,
+    .no_bullet_points:active {
+  color: #2174df;
+}
+
+.bottom_footer_container
+{
+ display: grid;
+ width: 90vw;
+ margin: 0 auto;
+}
+
+.footer_divider
+{
+
+    grid-column: 1/-1;
+    content: '';
+  display: block;
+  
+  background-color: #DADEE3;
+  border: .5px solid #DADEE3;
+  width: 100%;
+  transition: all  ease-in-out .1s;
+  position: relative;
+
+}
+
